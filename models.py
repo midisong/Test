@@ -10,6 +10,7 @@ from django.contrib import admin
 
 class Book(models.Model):
     name = models.CharField(max_length=30)
+    pubdate = models.DateTimeField(add_data_now)
     def __unicode__(self):
         return self.name
 
